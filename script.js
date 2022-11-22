@@ -1,5 +1,34 @@
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+function getPasswordCriteria() {
+  var userChoseNumbers = confirm("Would you like to add numbers?");
+  var options = {
+    userChoseNumbers: userChoseNumbers
+  };
+  return options;
+}
+
+function createRandom(length) {
+  var randomNum = Math.floor(Math.random() * length);
+  return randomNum;
+}
+
 function generatePassword() {
-  var myNewPassword = "";
+  var userChose = getPasswordCriteria();
+  var availableChars = [];
+  var passwordArr = [];
+  if(userChose.userChoseNumbers) {
+    availableChars = availableChars.concat(numbers);
+   
+  }
+
+  for(var i = 0; i < 4; i++) {
+    passwordArr.push(availableChars[createRandom(availableChars.lenght)])
+  }
+
+  return passwordArr.join("")
+
+  /* var myNewPassword = "";
  
   var passwordLength = prompt("Choose a password length from 8 to 128.")
   console.log(passwordLength)
@@ -19,15 +48,13 @@ function generatePassword() {
   var uppercase = confirm("Would you like to include uppercase letters?")
     console.log(uppercase)
 
-  var numeric = confirm("Would you like to include numeric characters?")
-    console.log(numeric)
 
   var specialCharacter = confirm("Would you like to include special characters?")
     console.log(specialCharacter)
 
   
 
-  return myNewPassword;
+  return myNewPassword; */
 }
 
 // Assignment Code
