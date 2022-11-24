@@ -1,1 +1,15 @@
-# random-password-generator
+# Random Password Generator
+My password generator
+
+## Description
+
+This project generats a random password based off of criteria selected by the user. 
+
+## Website URL
+
+
+## Screenshot
+
+![alt text](Assets/random-password-generator.png)
+
+Finished project

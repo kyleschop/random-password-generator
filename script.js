@@ -56,7 +56,7 @@ function generatePassword() {
     for(var i = 0; i < userChose.passwordLength; i++) {
       passwordArr.push(availableChars[createRandom(availableChars.length)])
     }
-    
+  
   return passwordArr.join("");
 }
 
