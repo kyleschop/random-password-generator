@@ -12,6 +12,7 @@ body,
   padding: 0;
 }
 
+/* This makes the font sans-serif for all the text */
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
@@ -30,6 +31,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* These sections, .card, effect the container class */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -97,6 +99,7 @@ button[disabled] {
   float: right;
 }
 
+/* This changes the ID password */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +121,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* These adjust the website as the screen size decreases */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
