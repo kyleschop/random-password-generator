@@ -7,6 +7,7 @@ This project generats a random password based off of criteria selected by the us
 
 ## Website URL
 
+https://kyleschop.github.io/random-password-generator/
 
 ## Screenshot
 
